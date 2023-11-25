@@ -7,6 +7,7 @@ class Emitter {
   }
 
   addParticle() {
+    this.origin.set(mouseX,mouseY);
     this.particles.push(new Particle(this.origin.x, this.origin.y));
   }
 

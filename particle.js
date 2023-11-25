@@ -9,9 +9,9 @@
 class Particle {
   constructor(x, y) {
     this.position = createVector(x, y);
-    this.velocity = createVector(random(-1, 1), random(-1, 0));
+    this.velocity = createVector(random(-1,1), random(-1,1));
     this.acceleration = createVector(0, 0);
-    this.lifespan = 255.0;
+    this.lifespan = 300;
   }
 
   run() {
@@ -33,9 +33,9 @@ class Particle {
 
   // Method to display
   show() {
-    stroke(0, this.lifespan);
+    stroke(0);
     strokeWeight(2);
-    fill(127, this.lifespan);
+    fill(127);
     circle(this.position.x, this.position.y, 8);
   }
 
