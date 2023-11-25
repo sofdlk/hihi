@@ -14,7 +14,7 @@ function draw() {
   background(255);
   emitter.addParticle();
   // We’re applying a universal gravity.
-  let gravity = createVector(0, 0.1);
+  let gravity = createVector(0,1);
   emitter.applyForce(gravity);
   //{!1} Applying the repeller
   emitter.applyRepeller(repeller);
